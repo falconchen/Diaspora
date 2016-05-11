@@ -600,7 +600,7 @@ h1.title {
     width: 100px;
     background: #eee;
     display: block;
-    margin: 30px auto 40px;
+    margin: 20px auto 20px;
 }
 .page .content:before {
     display: none;
