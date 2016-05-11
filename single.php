@@ -20,7 +20,7 @@
 
     <div id="top">
         <div class="bar"></div>
-        <a class="<?php if (LOGO_FONT) { echo 'icon-icon'; } else { echo 'image-icon'; } ?>" href="javascript:history.back()"></a>
+        <a class="<?php if (LOGO_FONT) { echo 'icon-icon'; } else { echo 'image-icon'; } ?>" href="<?php bloginfo('url');?>"></a>
         <div title="播放/暂停" data-id="<?php the_ID() ?>" class="icon-play"></div>
         <div title="查看壁纸" class="icon-images"></div>
 		<h3 class="subtitle"><?php the_title(); ?></h3>

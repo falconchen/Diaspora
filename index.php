@@ -28,7 +28,7 @@
         </div>
 
         <div id="header"><div>
-            <a class="<?php if (LOGO_FONT) { echo 'icon-logo'; } else { echo 'image-logo'; } ?>" href="/"></a>
+            <a class="<?php if (LOGO_FONT) { echo 'icon-logo'; } else { echo 'image-logo'; } ?>" href="<?php bloginfo('url');?>"></a>
             <div class="icon-menu switchmenu"></div>
         </div></div>
         <div id="post0">

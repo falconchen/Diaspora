@@ -27,7 +27,7 @@ if (is_home()) {
 <title><?php bloginfo('name'); ?> <?php wp_title( '|', true, 'left' ); ?></title>
 <meta name="keywords" content="<?php echo $keywords ?>" />
 <meta name="description" content="<?php echo $description ?>" />
-<meta name="author" content="LoeiFy">
+<meta name="author" content="Falcon">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/images/144.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/images/114.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/images/72.png">
@@ -35,6 +35,16 @@ if (is_home()) {
 <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/32.png" />
 <style>
 .image-logo{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo.png)}body.mu .image-logo{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo_black.png)}.image-icon{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo_min.png)}
+@font-face {
+    font-family: icomoon;
+    src:    url('(<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot?gowo97');
+    src:    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot?gowo97#iefix') format('embedded-opentype'),
+    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.ttf?gowo97') format('truetype'),
+    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.woff?gowo97') format('woff'),
+    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.svg?gowo97#icomoon') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 </style>
 <style>
 /* http://lorem.in  @author LoeiFy@gmail.com */ 
