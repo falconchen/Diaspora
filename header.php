@@ -24,7 +24,13 @@ if (is_home()) {
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="google" content="notranslate" />
-<title><?php bloginfo('name'); ?> <?php wp_title( '|', true, 'left' ); ?></title>
+<title>
+    <?php if(is_home()):?>
+    <?php bloginfo('description');?>
+    <?php else:?>
+    <?php bloginfo('name'); ?> <?php wp_title( '|', true, 'left' ); ?>
+    <?php endif?>
+</title>
 <meta name="keywords" content="<?php echo $keywords ?>" />
 <meta name="description" content="<?php echo $description ?>" />
 <meta name="author" content="Falcon">
