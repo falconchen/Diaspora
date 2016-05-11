@@ -695,7 +695,7 @@ h1.title {
     width: 100px;
     background: #eee;
     display: block;
-    margin: 30px auto 40px
+    margin: 15px auto 20px
 }
 
 .page .content:before {
@@ -1271,4 +1271,6 @@ h1.title {
 .icon-icon:before {
     content: "\e900"
 }
-
+.from {
+    text-align: right;
+}
