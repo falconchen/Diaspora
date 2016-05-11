@@ -37,11 +37,11 @@ if (is_home()) {
 .image-logo{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo.png)}body.mu .image-logo{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo_black.png)}.image-icon{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo_min.png)}
 @font-face {
     font-family: icomoon;
-    src:    url('(<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot?gowo97');
-    src:    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot?gowo97#iefix') format('embedded-opentype'),
-    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.ttf?gowo97') format('truetype'),
-    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.woff?gowo97') format('woff'),
-    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.svg?gowo97#icomoon') format('svg');
+    src:    url('(<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot');
+    src:    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot') format('embedded-opentype'),
+    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.ttf') format('truetype'),
+    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.woff') format('woff'),
+    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.svgg') format('svg');
     font-weight: 400;
     font-style: normal;
 }
