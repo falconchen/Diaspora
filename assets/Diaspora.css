@@ -1012,3 +1012,7 @@ h1.title {
         display: none;
     }
 }
+
+.from {
+    text-align: right;
+}

@@ -820,6 +820,7 @@ h1.title {
     display: none;
 }
 
+
 @media screen and (max-width: 1200px) {
     #header > div {
         width: 900px;
@@ -1011,4 +1012,7 @@ h1.title {
     .stuff span:first-child {
         display: none;
     }
+}
+.from {
+    text-align: right;
 }
