@@ -2,9 +2,9 @@
 
 define ('LIMIT_ON', TRUE);
 
-define ('ALLOW_EXTERNAL', FALSE);
+define ('ALLOW_EXTERNAL', TRUE);
 
-
+define ('FILE_CACHE_DIRECTORY',FALSE);
 
 define ('BROWSER_CACHE_MAX_AGE', 86400000);
 

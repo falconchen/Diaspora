@@ -182,6 +182,7 @@ class timthumb {
 		$tim = new timthumb();
 		$tim->handleErrors();
 		$tim->securityChecks();
+
 		if($tim->tryBrowserCache()){
 			exit(0);
 		}
