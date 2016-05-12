@@ -1186,9 +1186,11 @@ h1.title {
     }
 
     .relate h3 > em, .relate li {
-        display: none
+        display: block
     }
-
+    .relate h3 > em, .relate li p{
+        display: none;
+    }
     .stuff span {
         margin-right: 10px
     }
