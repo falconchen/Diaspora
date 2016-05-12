@@ -25,7 +25,7 @@
     <div class="else">
         <p><?php the_time('F j, Y'); ?></p>
         <h3><a data-id="<?php the_ID() ?>" class="posttitle" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        <p><?php the_excerpt(); ?></p>
+        <p><?php the_excerpt();?></p>
         <p class="here">
             <span class="icon-letter"><?php echo count_words ($text); ?></span>
             <span class="icon-view"><?php echo getPostViews(get_the_ID()); ?></span>

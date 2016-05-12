@@ -194,13 +194,18 @@ add_action ('init', 'checkHeaders');
 
 
 
-add_filter('get_the_excerpt','my_excerpt',10,2);
+add_filter('get_the_excerpt','my_excerpt',99,2);
 function my_excerpt($post_excerpt,$post){
-	if(strlen($post_excerpt) > 0){
-		return $post_excerpt;
+	if(strlen($post->post_excerpt) > 0){
+		return $post->post_excerpt;
 	}else{
 		return mb_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 100,"...");
 	}
+}
+
+add_filter('the_excerpt','strip_the_excerpt');
+function strip_the_excerpt($excerpt) {
+	return strip_tags($excerpt);
 }
 
 ?>
