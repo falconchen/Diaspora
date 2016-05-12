@@ -1,7 +1,7 @@
 <?php 
 if (is_home()) {
     $description = get_bloginfo('description');
-    $keywords = "素锦, inspiration, customization, rainmeter, design, web, 壁纸, 设计, 收集, wallpaper, collection, jaku, icon";
+    $keywords = "明,文章,音乐,分享";
 } else {
     if ($post->post_excerpt) {
         $description = $post->post_excerpt;
@@ -39,19 +39,12 @@ if (is_home()) {
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/images/72.png">
 <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/57.png">
 <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/32.png" />
-<style>
-.image-logo{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo.png)}body.mu .image-logo{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo_black.png)}.image-icon{background-image:url(<?php echo get_template_directory_uri(); ?>/images/logo_min.png)}
-@font-face {
-    font-family: icomoon;
-    src:    url('(<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot');
-    src:    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.eot') format('embedded-opentype'),
-    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.ttf') format('truetype'),
-    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.woff') format('woff'),
-    url('<?php echo get_template_directory_uri(); ?>/dist/fonts/icomoon.svgg') format('svg');
-    font-weight: 400;
-    font-style: normal;
-}
-</style>
+
+<!--
+<link rel='stylesheet' href='<?php echo get_stylesheet_uri();?>' type='text/css' media='all' />
+-->
+
+
 <style>
 /* http://lorem.in  @author LoeiFy@gmail.com */ 
 
@@ -63,7 +56,7 @@ body,div,h1,h2,h3,h4,h5,li,p,ul{margin:0;padding:0;font-weight:400;list-style:no
 <script>if(self!=top){top.location=self.location}</script>
 <script src="<?php echo get_template_directory_uri(); ?>/static/basket.js?000"></script>
 <script>
-	basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.css', unique: 11,  execute: false })
+	basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.css', unique: 13,  execute: false })
 	.then(function(responses) {
         _stylesheet.appendStyleSheet(responses[0], function() {});
 		basket.require({ url: '<?php echo get_template_directory_uri(); ?>/static/jquery.min.js', unique: 10 })
