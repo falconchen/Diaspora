@@ -192,4 +192,15 @@ function checkHeaders() {
 add_action ('publish_post', 'setUpPostLikes');
 add_action ('init', 'checkHeaders');
 
+
+
+add_filter('get_the_excerpt','my_excerpt',10,2);
+function my_excerpt($post_excerpt,$post){
+	if(strlen($post_excerpt) > 0){
+		return $post_excerpt;
+	}else{
+		return mb_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 100,"...");
+	}
+}
+
 ?>
