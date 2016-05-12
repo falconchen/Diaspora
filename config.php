@@ -1,6 +1,6 @@
 <?php
 
-define ('USE_TIMTHUMB', TRUE);
+define ('USE_TIMTHUMB', FALSE);
 
 define ('LOGO_FONT', TRUE);
 
