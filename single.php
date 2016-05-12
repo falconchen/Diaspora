@@ -19,8 +19,10 @@
     ); ?> 
 
     <div id="top">
+
+
         <div class="bar"></div>
-        <a class="<?php if (LOGO_FONT) { echo 'icon-icon'; } else { echo 'image-icon'; } ?>" href="<?php bloginfo('url');?>"></a>
+        <a class="<?php if (LOGO_FONT) { echo 'icon-icon'; } else { echo 'image-icon'; } ?>" href="<?php (isset($_SERVER['HTTP_REFERER']) && rtrim($_SERVER['HTTP_REFERER'],'/') == home_url())? print("javascript:history.back();") : bloginfo('url');?>"></a>
         <div title="播放/暂停" data-id="<?php the_ID() ?>" class="icon-play"></div>
         <div title="查看壁纸" class="icon-images"></div>
 		<h3 class="subtitle"><?php the_title(); ?></h3>
