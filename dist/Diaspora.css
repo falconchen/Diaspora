@@ -1280,3 +1280,6 @@ h1.title {
 .from {
     text-align: right;
 }
+.content p {
+    margin: 5px auto;
+}

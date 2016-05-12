@@ -56,7 +56,7 @@ body,div,h1,h2,h3,h4,h5,li,p,ul{margin:0;padding:0;font-weight:400;list-style:no
 <script>if(self!=top){top.location=self.location}</script>
 <script src="<?php echo get_template_directory_uri(); ?>/static/basket.js?000"></script>
 <script>
-	basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.css', unique: 13,  execute: false })
+	basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.css', unique: 14,  execute: false })
 	.then(function(responses) {
         _stylesheet.appendStyleSheet(responses[0], function() {});
 		basket.require({ url: '<?php echo get_template_directory_uri(); ?>/static/jquery.min.js', unique: 10 })
