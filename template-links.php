@@ -36,6 +36,4 @@ Template Name: links
 
 
 </div>
-
-</body>
-</html>
+<?php get_footer();?>
