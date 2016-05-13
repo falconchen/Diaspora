@@ -4,6 +4,7 @@
 
 <div class="nav">
 <?php wp_nav_menu( array( 'theme_location' => 'menu', 'container' => '', 'fallback_cb' => '' ) ); ?>
+<blockquote><?php echo solo_quote();?></blockquote>
 <p>&copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?>. Powered by WordPress</p>
 </div>
 
