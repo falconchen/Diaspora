@@ -17,7 +17,7 @@ basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora
                 .then(function() {
         basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/plugin.js', unique: 10 })
                         .then(function() {
-            basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.js', unique: 10gi})
+            basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.js', unique: 15})
                                 .then(function() {
                 if (!window.$ || !window.DP) {
                     localStorage.clear()
