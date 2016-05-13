@@ -205,11 +205,10 @@ function my_excerpt($post_excerpt,$post){
 
 add_filter('the_excerpt','strip_the_excerpt');
 function strip_the_excerpt($excerpt) {
-	return strip_tags($excerpt);
+	return strip_tags(nl2br($excerpt),'<br>');
 }
 
 function solo_quote() {
-	return "祝你遇到那个对的人和那件对的事，让之前种种狼狈不堪都成伏笔。 by 方慧
-";
+	return "祝你遇到那个对的人和那件对的事，让之前种种狼狈不堪都成伏笔。 by 方慧";
 }
 ?>
