@@ -205,7 +205,7 @@ function my_excerpt($post_excerpt,$post){
 
 add_filter('the_excerpt','strip_the_excerpt');
 function strip_the_excerpt($excerpt) {
-	return strip_tags(nl2br($excerpt),'<br>');
+	return strip_tags($excerpt,'<br>');
 }
 
 function solo_quote() {
