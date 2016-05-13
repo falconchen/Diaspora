@@ -11,7 +11,7 @@
 
     <?php if (have_posts()) : $count = 0;  while (have_posts()) : the_post(); $count++; if( $count <= 1 ): ?>
 
-	<?php $cover = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'cover'); ?>
+	<?php $cover = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
 	
 	<div id="screen">
         <div id="mark">
