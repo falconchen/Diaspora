@@ -628,7 +628,7 @@ $(function() {
             case (tag.indexOf('icon-icon') != -1):
 
                 if($('.icon-icon').attr('href').indexOf('javascript') == -1){
-                    Diaspora.HS($(e.target), 'push');
+                    Diaspora.HS($(e.target), 'replace');
                     return false;
                 }
 

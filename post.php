@@ -29,7 +29,9 @@
         <p class="here">
 
             <span class="icon-letter "><?php echo count_words ($text); ?></span>
+
             <span class="icon-view"><?php echo getPostViews(get_the_ID()); ?></span>
+
             <?php tz_printLikes(get_the_ID()); ?>
         </p>
     </div>
