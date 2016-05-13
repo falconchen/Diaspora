@@ -24,6 +24,7 @@ if (is_home()) {
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="google" content="notranslate" />
+<meta name="format-detection" content="telephone=no" />
 <title>
     <?php if(is_home()):?>
     <?php bloginfo('description');?>
