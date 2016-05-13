@@ -574,6 +574,14 @@ $(function() {
                 })
             break;
 
+            case (tag.indexOf('icon-icon') != -1):
+                if($('.icon-icon').attr('href').indexOf('http') !== -1){
+                    Diaspora.HS($(e.target), 'push');
+                    return false;
+                }
+
+            break;
+
             // history state
             case (tag.indexOf('cover') != -1):
                 Diaspora.HS($(e.target).parent(), 'push')
