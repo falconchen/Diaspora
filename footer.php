@@ -10,7 +10,7 @@
 ?>
 <script src="<?php echo get_template_directory_uri(); ?>/static/basket.js"></script>
 <script>
-basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.css', unique: 20,  execute: false })
+basket.require({ url: '<?php echo get_template_directory_uri(); ?>/dist/Diaspora.css', unique: 21,  execute: false })
         .then(function(responses) {
     _stylesheet.appendStyleSheet(responses[0], function() {});
             basket.require({ url: '<?php echo get_template_directory_uri(); ?>/static/jquery.min.js', unique: 10 })

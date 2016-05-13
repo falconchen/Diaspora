@@ -1286,7 +1286,7 @@ h1.title {
     margin: 5px auto;
 }
 .nav blockquote{
-    /*
+
     text-align: center;
     width: 80%;
     font-size: 1.2em;
@@ -1294,15 +1294,16 @@ h1.title {
     color: #ccc;
     font-style: italic;
     margin: 0 auto;
-    */
+    /*
     text-align: center;
-    width: 90%;
+
     font-size: 1em;
     font-weight: normal;
     color: #999;
     font-style: italic;
-    /* margin: 0 auto; */
+
     vertical-align: middle;
     position: absolute;
     bottom: 40px;
+    */
 }
